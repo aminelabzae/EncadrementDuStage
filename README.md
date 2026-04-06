@@ -1,59 +1,102 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+    <h2>🎓 Plateforme Web de Gestion de Stages et Encadrement</h2>
+    <p>Une application web moderne pour g&eacute;rer les stages, le suivi des stagiaires, les entreprises et les &eacute;valuations avec des fonctionnalit&eacute;s avanc&eacute;es d'export et de tableau de bord.</p>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+    <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+    <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
 </p>
+</div>
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🌟 Aperçu du Projet
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Ce projet a été conçu pour simplifier et digitaliser le processus d'encadrement des stagiaires au sein d'une organisation. Grâce à une interface intuitive et des rôles bien définis, les différents acteurs (Administrateurs, Encadrants et Stagiaires) peuvent interagir efficacement et suivre l'avancement des stages en temps réel.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Fonctionnalités Clés
 
-## Learning Laravel
+- **🏠 Tableaux de Bord Dynamiques et Rôle-spécifiques :**
+  - **Stagiaires** : Suivi de leur stage en cours, jours restants, notes d'évaluation, et statistiques de jour.
+  - **Encadrants** : Vue d'ensemble sur les stagiaires assignés, stages actifs, visites à venir, et journaux récents.
+  - **Administrateurs** : Statistiques globales du système (nombre total de stages, entreprises, visites prévues).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- **👥 Gestion Complète (CRUD) :**
+  - Stagiaires & Encadrants
+  - Entreprises d'accueil
+  - Stages (Sujet, Dates, Types)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **📝 Suivi Continu :**
+  - **Journaux de Stage** : Les stagiaires peuvent remplir leurs avancées régulières.
+  - **Visites d'Évaluation** : Planification et suivi de visites sur site par les encadrants.
+  - **Évaluations** :  Saisie des notes et commentaires.
 
-## Laravel Sponsors
+- **📄 Exports et Imports Avancés :**
+  - Génération de **PDFs** (Attestations de stage, Rapports d'évaluation) via `barryvdh/laravel-dompdf`.
+  - Import et Export en masse vers/depuis **Excel** pour les Stagiaires, Stages et Entreprises via `maatwebsite/excel`.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🛠️ Stack Technologique
 
-### Premium Partners
+- **Backend:** Laravel 12.0 (PHP ^8.2)
+- **Frontend:** Blade Templating, Vite
+- **Base de Données:** MySQL / MariaDB (ou SQLite pour le dev)
+- **Authentification:** Laravel Breeze / Sanctum
+- **Outils tiers:** DomPDF, Laravel Excel
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🚀 Installation & Lancement Rapide
 
-## Contributing
+Suivez ces étapes pour exécuter le projet localement :
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. **Cloner le dépôt**
+   ```bash
+   git clone https://github.com/aminelabzae/EncadrementDuStage.git
+   cd EncadrementDuStage
+   ```
 
-## Code of Conduct
+2. **Installer les dépendances Backend**
+   ```bash
+   composer install
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3. **Installer les dépendances Frontend**
+   ```bash
+   npm install
+   ```
 
-## Security Vulnerabilities
+4. **Configurer l'environnement**
+   Copiez le fichier d'environnement et générez une clé d'application :
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+   > N'oubliez pas de configurer les informations d'accès à votre base de données dans le fichier `.env`.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5. **Exécuter les Migrations et Seeders**
+   ```bash
+   php artisan migrate --seed
+   ```
 
-## License
+6. **Lancer le serveur de développement**
+   Ouvrez deux terminaux séparés et exécutez les deux commandes suivantes :
+   ```bash
+   php artisan serve
+   ```
+   ```bash
+   npm run dev
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+7. **Accéder à l'application**
+   Rendez-vous sur [http://localhost:8000](http://localhost:8000).
+
+## 🔒 Règles de Contribution
+
+- Les fichiers d'environnement (`.env`) et autres fichiers temporaires (`.bkp`, `.py`) doivent rester non-suivis dans Git.
+- Les rapports d'erreur de la BDD et le cache doivent être ignorés.
+
+---
+
+<p align="center">
+  Développé pour l'optimisation du processus de suivi et d'encadrement des stages.
+</p>
