@@ -12,6 +12,24 @@
 
 ---
 
+## 📸 Aperçu de l'Interface
+
+### Page de Connexion
+![Login Page](docs/images/login.png)
+
+### Tableaux de Bord par Rôle
+
+**Administrateur**
+![Admin Dashboard](docs/images/admin_dashboard.png)
+
+**Encadrant**
+![Encadrant Dashboard](docs/images/encadrant_dashboard.png)
+
+**Stagiaire**
+![Stagiaire Dashboard](docs/images/stagiaire_dashboard.png)
+
+---
+
 ## 🌟 Aperçu du Projet
 
 Ce projet a été conçu pour simplifier et digitaliser le processus d'encadrement des stagiaires au sein d'une organisation. Grâce à une interface intuitive et des rôles bien définis, les différents acteurs (Administrateurs, Encadrants et Stagiaires) peuvent interagir efficacement et suivre l'avancement des stages en temps réel.
